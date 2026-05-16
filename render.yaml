@@ -1,7 +1,3 @@
-# Use this Blueprint to deploy n8n on Render as a web
-# service that uses a Postgres database to store
-# workflow data.
-
 services:
   - type: web
     plan: free
@@ -17,12 +13,12 @@ services:
       - key: DB_POSTGRESDB_HOST
         value: aws-1-us-east-1.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
-        value: 6543
+        value: 5432
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_USER
         value: postgres.osbjaeilalkaosceigsc
       - key: DB_POSTGRESDB_PASSWORD
-        value: fadlksajflashfhladsmfhlashlfjdsafasdf11BB
+        value: fadlksajflashfhladsmfhlashlfjdsafasdf
       - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
         value: false
